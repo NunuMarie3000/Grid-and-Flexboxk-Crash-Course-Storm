@@ -1,0 +1,61 @@
+/* 1d layout model vs grid's 2d layout
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    display: flex;
+    background-color: #f4f4f4;
+    /* justify-content: space-between; */
+    /*justify-content is used on the container, it acts on the main-axis*/
+    /*align on the cross axis with align-items*/
+
+}
+
+.item{
+    /*this is setting flex grow, shrink, and basis all at once*/
+    /*flex: 1 0 100px;*/
+    flex: 1;
+    height: 100px;
+    background: #254de4;
+    color: #fff;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-basis is set on the item, width of the box when it starts off, without flex-grow/flex-shrink ex: if i set item 2's flex-basis: 200px, it'll be 200px wide*/
+}
+
+/* .item:nth-of-type(3){
+    /*align self to align individual item vertically
+    align-self: end;
+} */
+/*.item:nth-of-type(1){
+    /*you can change the order of flex items with the order property
+    order: 2;
+}*/
+
+/*.item:nth-of-type(1){
+    /*flex-grow is a single number, default is 0, like a growth rate, if we set items 1 and 3 to flex-grow 1, and item 2 to flex-grow 2, they'll all start off at the default 100px width we set, but as the screen expands, they grow, and item 2 will always be the widest of the three, they grow at different rates, you can also set flex-grow as the same of all items and they'll all grow. flex shrink is the exact opposite, same syntax, a flex-shrink 3 will shrink the most while flex-shrink 1 will shrink the least
+    flex-grow: 3;
+}*/
+
+.item:nth-of-type(1){
+    
+}
+
+.item:nth-of-type(2){
+    
+}
+
+.item:nth-of-type(3){
+   
+}
